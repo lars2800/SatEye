@@ -30,5 +30,23 @@
         <p>Sattelite List Source: <a href="https://db.satnogs.org/api/satellites/" target="_blank">Satnogs DB Api</a></p>
         <p>TLE Source: <a href="https://celestrak.org/" target="_blank">Celestrak.org</a></p>
     </div>
+
+    <script>
+        // Becuase browsers include their navbar is a margin in the app we hav to dynamicly adjust for that
+
+        // First we get the viewport height and set it as a CSS variable
+        function setVh() {
+            let vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh * 100}px`);
+        }
+
+        // Initial set
+        setVh();
+
+        // Update on resize/orientation change
+        window.addEventListener('resize', setVh);
+        window.addEventListener('orientationchange', setVh);
+    </script>
+
 </body>
 </html>
