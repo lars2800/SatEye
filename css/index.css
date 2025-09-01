@@ -46,12 +46,12 @@
 
 #centerDiv{
     position: fixed;
-    width: 70vw;
-    height: 80vh;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    margin-left: 15vw;
-    margin-right: 15vw;
+    width: calc(100vw - 100px);
+    height: calc( 100vh - 110px );
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
     background-color: rgba(255, 255, 255, 0.37);
     border-radius: 20px;
     box-sizing: border-box;
