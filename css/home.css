@@ -1,0 +1,162 @@
+body {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -webkit-user-select: none;
+    background-color: #E4E4E4;
+    font-family: system-ui, -apple-system, -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;
+    font-size: 12px;
+    color: black;
+    border: 0;
+    margin: 0;
+    padding: env(safe-area-inset-top, 0px)
+             env(safe-area-inset-right, 0px)
+             env(safe-area-inset-bottom, 0px)
+             env(safe-area-inset-left, 0px);
+
+    /* Let content grow */
+    min-height: 100vh;
+}
+
+.app {
+    width: 100%;
+    min-height: 100%;
+}
+
+
+/*---------*/
+/* Top bar */
+/*---------*/
+
+.topbar{
+    box-sizing: border-box;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    height: 20vh;
+    width: 100%;
+
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+
+    background-color: rgba(255, 255, 255, 0.123);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px); /* for Safari */
+
+    border-bottom: 1px solid white;
+}
+
+.topbar .upper{
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+
+.topbar .upper .left{
+    width: 80%;
+    height: 100%;
+}
+
+.topbar .upper .left p{
+    margin: 0;
+    height: 100%;
+    font-size: 6vh;
+    color: white;
+}
+
+.topbar .upper .right{
+    width: 25%;
+    height: 100%;
+}
+
+.topbar .upper .right p{
+    margin: 0;
+    height: 100%;
+    font-size: 5vh;
+    width: 100%;
+    text-align: right;
+    
+}
+
+.gear-icon{
+    height: 6vh;
+    width:  6vh;
+    margin-left: 9vw;
+}
+
+.topbar .lower{
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+
+.topbar .lower .left{
+    width: 65%;
+    height: 100%;
+}
+
+.topbar .lower .left input{
+    box-sizing: border-box;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    padding-left: 10px;
+    color: white;
+}
+
+.topbar .lower .left input::placeholder{
+    color: white;
+}
+
+.topbar .lower .right{
+    margin-left: 3%;
+    width: 30%;
+    height: 100%;
+    background-color: #3b3b3b;
+    border-radius: 15px;
+    display: flex;
+    align-items: center; /* vertical centering */
+    justify-content: center; /* horizontal centering (optional) */
+}
+
+.topbar .lower .right p{
+    font-size: 3vh;
+    margin: 0; /* reset margin */
+    text-align: center;
+    color: white;
+}
+
+
+/*---------------*/
+/* searchResults */
+/*---------------*/
+
+.searchResults{
+
+    box-sizing: border-box;
+    
+    margin-top: 20vh; /* Top bar size ( so that the results don't go under the top bar ) */
+    min-height: 100vh;
+    width: 100vw;
+
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 5vw;
+
+}
+
+.searchResults .searchResultItem{
+    margin-top: 10%;
+    width: 100%;
+    height: 12.5vh;
+    background-color: rgb(97, 97, 97);
+}
+
+.searchResults > :first-child{
+    margin-top: 0%;
+}
