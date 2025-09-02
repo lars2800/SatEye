@@ -73,19 +73,10 @@ body {
     height: 100%;
 }
 
-.topbar .upper .right p{
-    margin: 0;
-    height: 100%;
-    font-size: 5vh;
-    width: 100%;
-    text-align: right;
-    
-}
-
 .gear-icon{
     height: 6vh;
     width:  6vh;
-    margin-left: 9vw;
+    margin-left: calc(92% - 6vh);
 }
 
 .topbar .lower{
