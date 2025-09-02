@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+
     <title>Lars-Sat Website</title>
 
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/starbg.css">
     <link rel="stylesheet" href="css/index.css">
+
+    <link rel="icon" type="image/png" href="resources/icon64.png">
     
 </head>
 <body>
@@ -23,6 +30,9 @@
                     <p>continue!</p>
                 </div>
 
+                <div id="imageWrapper">
+                    <img id="centericon" src="resources/icon64.png"></img>
+                </div>
             </div>
         </div>
     </div>
@@ -32,38 +42,7 @@
         <p>TLE Source: <a href="https://celestrak.org/" target="_blank">Celestrak.org</a></p>
     </div>
 
-    <script>
-        // Becuase browsers include their navbar is a margin in the app we hav to dynamicly adjust for that
-
-        // First we get the viewport height and set it as a CSS variable
-        function setVh() {
-            let vh = window.innerHeight * 0.01;
-            document.documentElement.style.setProperty('--vh', `${vh * 100}px`);
-        }
-
-        // Initial set
-        setVh();
-
-        // Update on resize/orientation change
-        window.addEventListener('resize', setVh);
-        window.addEventListener('orientationchange', setVh);
-
-        // Add on load functionality
-        window.addEventListener("DOMContentLoaded",function(){
-
-            // Add listener to go to other page
-            document.querySelector("#findSatBtnDiv p").addEventListener("click",function(){
-                if (window.location.protocol === "file:") {
-                    // Dev mode
-                    window.location.href = "home.html";
-                } else{
-                    // Real website
-                    window.location.href = "home";
-                }
-            })
-
-        });
-    </script>
+    <script src="js/index.js"></script>
 
 </body>
 </html>

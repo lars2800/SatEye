@@ -75,3 +75,16 @@ p{
 
     font-size: 6vh;
 }
+
+#imageWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#centericon{
+    image-rendering: pixelated; /* for most modern browsers */
+    image-rendering: crisp-edges; /* fallback for some browsers */
+    height: 30vh;
+}
