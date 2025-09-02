@@ -46,6 +46,22 @@
         // Update on resize/orientation change
         window.addEventListener('resize', setVh);
         window.addEventListener('orientationchange', setVh);
+
+        // Add on load functionality
+        window.addEventListener("DOMContentLoaded",function(){
+
+            // Add listener to go to other page
+            document.querySelector("#findSatBtnDiv p").addEventListener("click",function(){
+                if (window.location.protocol === "file:") {
+                    // Dev mode
+                    window.location.href = "home.html";
+                } else{
+                    // Real website
+                    window.location.href = "home";
+                }
+            })
+
+        });
     </script>
 
 </body>
