@@ -20,7 +20,7 @@ p{
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.37);
     width: calc(100vw - 80px);
-    height: calc(var(--vh, 100vh) - 110px); /* adjust for browser margins ( idk, mobile shit ) */
+    height: calc(var(--vh, 100vh) - 150px); /* adjust for browser margins ( idk, mobile shit ) */
     margin: 40px 40px 50px 40px;
     padding-top: 5vh;
     padding-left: 5vw;
@@ -40,7 +40,7 @@ p{
 
 #bottomLeft {
     position: fixed;
-    bottom: 10px;
+    bottom: 40px;
     left: 10px;
     color: white;
     font-size: 0.9em;

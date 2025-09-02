@@ -159,9 +159,8 @@ body {
 
 
 #bottomLeft {
-    z-index: 5;
     position: fixed;
-    bottom: 10px;
+    bottom: 40px;
     left: 10px;
     color: white;
     font-size: 0.9em;
