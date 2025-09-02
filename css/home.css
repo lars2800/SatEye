@@ -76,7 +76,7 @@ body {
 .gear-icon{
     height: 6vh;
     width:  6vh;
-    margin-left: calc(92% - 6vh);
+    margin-left: calc(100% - 6vh);
 }
 
 .topbar .lower{
@@ -105,7 +105,7 @@ body {
 }
 
 .topbar .lower .right{
-    margin-left: 3%;
+    margin-left: 5%;
     width: 30%;
     height: 100%;
     background-color: #3b3b3b;
