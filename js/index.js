@@ -1,3 +1,8 @@
+/*
+© 2025 Lars Van Goethem. All rights reserved.
+Use permitted under LICENSE ( file )
+*/
+
 // Becuase browsers include their navbar is a margin in the app we hav to dynamicly adjust for that
 
         // First we get the viewport height and set it as a CSS variable
