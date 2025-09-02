@@ -160,3 +160,23 @@ body {
 .searchResults > :first-child{
     margin-top: 0%;
 }
+
+
+#bottomLeft {
+    z-index: 5;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 0.9em;
+    line-height: 1.4em;
+}
+
+#bottomLeft a,#bottomLeft p {
+    color: white;
+}
+
+#bottomLeft a{
+    text-decoration: underline;
+    color: blue;
+}
