@@ -18,3 +18,4 @@ License Summary ( not legaly binding see LICENSE file ):
 - Public use requires my explicit permission and credit.
 
 © 2025 Lars Van Goethem. This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
+https://creativecommons.org/licenses/by-nc/4.0/deed.en
